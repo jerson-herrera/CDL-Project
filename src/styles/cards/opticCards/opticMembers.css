@@ -1,0 +1,23 @@
+/* Estilos específicos para ShotzyyCard */
+.Cards.shotzzy .card-front img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilos específicos para PredCard */
+.Cards.pred .card-front img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilos específicos para DashyCard */
+.Cards.dashy .card-front img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilos específicos para KennyCard */
+.Cards.kenny .card-front img {
+  width: 100%;
+  height: 100%;
+}

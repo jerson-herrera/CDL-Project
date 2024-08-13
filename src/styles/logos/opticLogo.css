@@ -1,0 +1,50 @@
+/* Estilos para el contenedor de logos y encabezado */
+.team-logos {
+  /* Centra horizontalmente el texto */
+  text-align: center;
+}
+
+/* Estilos para el encabezado */
+.team-logos h1 {
+  /* Asegura que el encabezado no ocupe todo el ancho */
+  max-width: 80%;
+  /* Centra el encabezado horizontalmente */
+  margin: 0 auto;
+}
+
+/* Estilos para los enlaces con los logotipos */
+.team-logos a {
+  /* Quita el subrayado predeterminado de los enlaces */
+  text-decoration: none;
+}
+
+/* Estilos para los logotipos */
+.team-logos .logo-optic,
+.team-logos .logo-faze {
+  /* Fuerza a los logotipos a mostrarse uno al lado del otro */
+  display: inline-block;
+  /* Añade un espacio entre los logotipos */
+  margin: 0 10px;
+}
+
+
+
+.logo-optic {
+  height: 10em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo-optic:hover {
+  filter: drop-shadow(0 0 2em #03fd84aa);
+}
+
+
+
+/*Estos estilo los podria usar para celular.*/
+/* .team-logos {
+  text-align: center;  Centra horizontalmente los elementos de texto 
+  display: flex;  Utiliza el modelo de caja flexible 
+  flex-direction: column;  Coloca los elementos en columna 
+  align-items: center;  Centra los elementos verticalmente 
+} */

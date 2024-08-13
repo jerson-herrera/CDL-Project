@@ -1,0 +1,138 @@
+.Cards {
+  width: 200px; /* Ancho de la tarjeta */
+  height: 320px; /* Altura de la tarjeta */
+  perspective: 1000px; /* Perspectiva para la animación */
+  margin: 25px; /* Espacio entre las tarjetas */
+  font-family: sans-serif; /*Tipo de letra*/
+  color: #ffffff; /*Color de las letras*/
+}
+
+/* Filtro de sombra al pasar el mouse sobre la tarjeta */
+.Cards:hover {
+  filter: drop-shadow(0 0 2em rgba(247, 1, 1, 1));
+}
+
+/* Rota la tarjeta al pasar el mouse por encima*/
+.Cards:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+/*Puedes considerar que el card-inner es el contenedor principal que contiene tanto la cara delantera como la trasera de la tarjeta. Esto es típico en el diseño de tarjetas que pueden voltearse para revelar información adicional en su parte trasera.
+*/
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.9s; /*Segundos que se demora en voltear la tarjeta*/
+  transform-style: preserve-3d;
+}
+
+/*Color de fondo de la card-back*/
+.card-containerfaze .card-back {
+  background-color: rgb(0, 0, 0);
+}
+
+.card-back .info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%; /* Asegura que el contenedor info ocupe toda la altura */
+  padding: 7px; /* Agrega un poco de espacio alrededor del contenido */
+}
+
+.card-back p {
+  font-size: 13px; /* Tamaño de fuente más pequeño */
+}
+
+.card-containerfaze {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.h1Faze {
+  text-align: center;
+}
+
+/*******************************************************************************************************************/
+
+.social-logos {
+  display: flex;
+  padding-bottom: 10px; /* Añade algo de padding inferior para que no estén pegados al borde */
+}
+
+/*Cambia el cursor al pasarlo por encima de uno de los logos*/
+.youtube-logo,
+.twitch-logo,
+.x-logo {
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+
+.youtube-logo:hover,
+.twitch-logo:hover,
+.x-logo:hover {
+  transform: scale(1.2);
+}
+
+.x-logo {
+  margin-top: 13px; /* Ajusta este valor según tus necesidades */
+
+  margin-right: 10px; /* Mueve el logo hacia la izquierda */
+}
+.twitch-logo {
+  margin-top: 14px; /* Ajusta este valor según tus necesidades */
+  margin-right: 1px; /* Mueve el logo hacia la izquierda */
+}
+
+
+.youtube-logo {
+  width: 35px;
+  height: 35px;
+  margin-top: 9px; /* Ajusta este valor según tus necesidades */
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 80px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Ubica el tooltip arriba del logo */
+  left: 50%;
+  margin-left: -40px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}

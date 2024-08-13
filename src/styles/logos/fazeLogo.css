@@ -1,0 +1,11 @@
+.logo-faze {
+  height: 10em; /* Ajuste de altura */
+  width: 290px; /* Hace que la anchura sea automática, manteniendo la proporción */
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo-faze:hover {
+  filter: drop-shadow(0 0 2em #fd1803aa);
+}

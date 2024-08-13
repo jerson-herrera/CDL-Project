@@ -1,0 +1,69 @@
+.Footer {
+  background-color: #000000;
+  padding: 4px; /* Reducir el espacio interno del footer para hacerlo más delgado */
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  /* align-items: center; Centra los elementos verticalmente */
+}
+
+.Footer a {
+  margin: 0 10px; /* Ajusta el margen entre los enlaces */
+}
+
+.footer-x,
+.footer-twitch,
+.footer-youtube,
+.footer-insta {
+  width: 30px;
+  height: 30px;
+  /* border-radius: 90%; Para hacer la imagen redonda */
+  cursor: pointer;
+  /* border: 2px solid transparent; /* Establece un borde transparente inicialmente */
+  /* transition: border-color 0.3s ease; Agrega una transición suave para el cambio de color del borde */
+}
+
+/* Esto crea un efecto de agrandamiento sutil en la imagen*/
+.footer-x:hover,
+.footer-twitch:hover,
+.footer-youtube:hover,
+.footer-insta:hover {
+  transform: scale(1.1);
+}
+
+
+
+
+.footer-youtube:hover {
+  filter: red; /* Cambia el color del borde a rojo al pasar el cursor */
+}
+.footer-twitch:hover {
+  border-color:blueviolet
+}
+.footer-x:hover {
+  border-color: rgb(91, 89, 89); /* Cambia el color del borde a rojo al pasar el cursor */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*MOBILE*/
+
+/* Media query para pantallas de hasta 768px */
+@media screen and (max-width: 700px) {
+  .Footer {
+    flex-direction: row; /* Cambia la dirección de los elementos a columna */
+    padding: 10px; /* Aumenta el espacio interno del footer para mayor separación */
+  }
+
+  .Footer a {
+    margin: 10px 0; /* Ajusta el margen vertical entre los enlaces */
+  }
+}
