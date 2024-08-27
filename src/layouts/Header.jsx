@@ -94,12 +94,12 @@ const Navbar = () => {
         <li>
           <Link onClick={handleClick} to="/">Home</Link>
         </li>
-        <li>
+        {/* <li>
           <Link onClick={handleClick} to="/service">Service</Link>
         </li>
         <li>
           <Link onClick={handleClick} to="/contact">Contact</Link>
-        </li>
+        </li> */}
         <li>
           <Link onClick={handleClick} to="/standings">Standings</Link>
         </li>
